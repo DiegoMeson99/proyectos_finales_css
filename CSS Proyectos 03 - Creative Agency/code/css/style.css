@@ -10,10 +10,10 @@ body {
   background-image: url(../img/iro-background@2x.jpg);
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 40%;
+  background-size: 42%;
   background-color: var(--color-blue);
 
-  padding: 2% 7%;
+  padding: 1.5% 8%;
 
   font-family: var(--font-primary);
 }
@@ -22,16 +22,17 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 100px;
+  align-items: center;
+  gap: 110px;
 }
 
 header figure {
   margin: 0;
+  align-self: flex-end;
 }
 
 header figure img {
-  width: 100px;
+  width: 75px;
 }
 
 header figcaption {
@@ -46,7 +47,8 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 40px;
+  align-items: center;
+  gap: 45px;
 
   margin: 0;
   padding: 0;
@@ -56,12 +58,111 @@ header nav ul {
 header nav ul a {
   color: var(--color-white);
   font-weight: normal;
+  font-size: 14px;
   text-decoration: none;
-  vertical-align: top;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
 }
 
 header nav ul li:last-child {
   background-color: var(--color-blue);
   align-self: flex-end;
   margin-left: auto;
+  padding: 10px 18px;
+}
+
+main {
+  transform: translateX(-12%);
+}
+
+main .hero {
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 12%;
+}
+
+main .hero h1 {
+  color: var(--color-white);
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 60px;
+  margin: 25px 0px;
+}
+
+main .hero p {
+  color: var(--color-white);
+  font-size: 19px;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 30px;
+  margin: 0;
+}
+
+main .hero a {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 19px;
+  text-decoration: none;
+
+  margin-top: 50px;
+  padding: 10px 15px;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+main .hero a img {
+  width: 35px;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+
+main .categories {
+  width: 85%;
+  box-sizing: border-box;
+  gap: 40px;
+  background-color: var(--color-white);
+  padding-top: 40px;
+  padding-bottom: 71px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin-top: 60px;
+}
+
+main .categories article {
+  max-width: 270px;
+}
+
+main .categories article:first-of-type {
+  margin-left: 15%;
+}
+
+main .categories article figure {
+  margin: 0;
+}
+
+main .categories article figure img {
+  margin: 0;
+  width: 45px;
+}
+
+main .categories article h3 {
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  margin: 7px 0px;
+}
+
+main .categories article p {
+  color: var(--color-grey);
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
 }
